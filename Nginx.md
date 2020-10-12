@@ -14,6 +14,7 @@ sudo yum install nginx
 
 ```console
 whereis nginx
+./ngixn -s reload
 ```
 
 ## 配置
@@ -31,6 +32,7 @@ Web: `web.conf webapi.conf`
 ```console
 ps -ef | grep nginx
 ps -C nginx -o pid
+kill -9 1011
 ```
 
 ## 端口

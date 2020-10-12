@@ -2,21 +2,36 @@
 
 ## 系统环境
 
-centos 7.8  
-yum包管理器  
-pwd  
+`uname -a`
+`Linux localhost.localdomain 3.10.0-123.el7.x86_64 #1 SMP Mon Jun 30 12:09:22 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux`
+`yum --version`
+
+## 常用命令
+
+```console
+pwd
+ls ll
+rz -y sz file.f
+
+ps -ef | grep
+#-e 显示所有进程
+#-f 全格式
+#|:>管道命令 是指ps命令与grep命令同时执行
+#grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。
+
+```
 
 ## 解压
 
 1 *.tar 用 tar -xvf 解压
 
-2 *.gz 用 gzip -d或者gunzip 解压
+2 *.gz 用 gzip -d|gunzip 解压
 
-3 *.tar.gz 和 *.tgz 用 tar -xzf 解压
+3 *.tar.gz|*.tgz 用 tar -xzf 解压
 
-4 *.bz2 用 bzip2 -d或者用bunzip2 解压
+4 *.bz2 用 bzip2 -d|bunzip2 解压
 
-5 *.tar.bz2用tar -xjf 解压
+5 *.tar.bz2 用 tar -xjf 解压
 
 6 *.Z 用 uncompress 解压
 
@@ -91,4 +106,4 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 
 ## 防火墙
 
-iptables -L
+centos 7 使用`firewalld`
