@@ -104,6 +104,15 @@ sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
 sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 ```
 
+## 守护进程
+
+作用于服务和web
+
+```console
+yum install epel-release
+yum install -y supervisor
+```
+
 ## 防火墙
 
 centos 7 使用`firewalld`
